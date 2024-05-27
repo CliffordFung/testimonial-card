@@ -1,11 +1,15 @@
-import "./App.css";
+import TestimonalCard from "./components/TestimonialCard";
+import sarahDoleAvatar from "./assets/profile-thumbnail.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className=" text-3xl font-bold underline">Hello world!</h1>
-      </header>
+    <div className="gradient flex h-screen items-start justify-center py-[200px]">
+      <TestimonalCard
+        avatar={sarahDoleAvatar}
+        description="I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!"
+        handle="@sarahdole"
+        name="Sarah Dole"
+      />
     </div>
   );
 }
